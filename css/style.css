@@ -1,0 +1,13 @@
+.menu{
+    background-color: #94C9A9;
+}
+
+#content{
+    padding: 15%;
+}
+
+.menu figure img{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
