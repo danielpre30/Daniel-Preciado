@@ -34,3 +34,7 @@ main article form {
     background-color: #0FF4C6;
     border-color: #0FF4C6;
 }
+
+aside .nav-link:hover {
+    color: #57737A;
+}

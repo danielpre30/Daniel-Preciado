@@ -15,15 +15,20 @@
     <div class="container-fluid h-100">
         <div class="row h-100">
             <aside class="col-12 col-sm d-sm-flex justify-content-center align-items-center flex-column menu text-dark">
-                <figure>
-                    <img src="img/foto_perfil.jpg" alt="Daniel Preciado" class="rounded-circle">
-                    <figcaption class="border-bottom border-dark">
-                        <p class="h2">Hola!</p>
-                        <h1 class="h2 font-weight-bold">Soy Daniel</h1>
-                    </figcaption>
-                </figure>
-                <nav>
-                    <div class="nav d-flex flex-column" id="nav-tab" role="tablist">
+
+                <nav class="nav-bar navbar-expand-lg">
+                    <figure class="navbar-brand">
+                        <img src="img/foto_perfil.jpg" alt="Daniel Preciado" class="rounded-circle">
+                        <figcaption class="border-bottom border-dark">
+                            <p class="h2">Hola!</p>
+                            <h1 class="h2 font-weight-bold">Soy Daniel</h1>
+                        </figcaption>
+                    </figure>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-tab"
+                        aria-controls="nav-tab" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-flex flex-column" id="nav-tab" role="tablist">
                         <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
                             role="tab" aria-controls="nav-profile" aria-selected="true">Perfil</a>
                         <a class="nav-item nav-link" id="nav-skills-tab" data-toggle="tab" href="#nav-skills" role="tab"
@@ -32,6 +37,8 @@
                             role="tab" aria-controls="nav-education" aria-selected="false">Educacion</a>
                         <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
                             role="tab" aria-controls="nav-contact" aria-selected="false">Contacto</a>
+                        <a class="nav-item nav-link" id="nav-more-tab" data-toggle="tab" href="#nav-more" role="tab"
+                            aria-controls="nav-more" aria-selected="false">Màs sobre mi</a>
                     </div>
                 </nav>
             </aside>
@@ -92,6 +99,27 @@
                         data-size="large" data-lang="es" data-show-count="false">Follow @danielpret30</a>
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </article>
+                <article class="tab-pane fade" id="nav-more" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <h2>Más sobre mi</h2>
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/dragons.jpg" alt="First slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </article>
 
             </main>
         </div>
@@ -106,6 +134,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 
 
 
