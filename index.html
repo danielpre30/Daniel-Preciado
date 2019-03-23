@@ -7,36 +7,44 @@
     <meta name="author" content="Daniel Preciado">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css"">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel=" stylesheet" href="css/style.css">
     <title>Daniel Preciado</title>
 </head>
 
 <body class="h-100">
     <div class="container-fluid h-100">
         <div class="row h-100">
-            <div class="col-12 col-sm d-sm-flex justify-content-center align-items-center flex-column menu">
+            <aside class="col-12 col-sm d-sm-flex justify-content-center align-items-center flex-column menu text-dark">
                 <figure>
-                    <img src="img/foto_perfil.jpg" alt="Daniel Preciado" class="rounded-circle" width="80" height="80">
+                    <img src="img/foto_perfil.jpg" alt="Daniel Preciado" class="rounded-circle">
                     <figcaption class="border-bottom border-dark">
                         <p class="h2">Hola!</p>
                         <h1 class="h2 font-weight-bold">Soy Daniel</h1>
                     </figcaption>
                 </figure>
-                <nav class="nav flex-column" id="tab" role="tablist" aria-orientation="vertical">
-                    <a href="#profile" class="nav-item nav-link active text-reset" id="profile-tab" role="tab" aria-controls="profile" aria-selected="true">Perfil</a>
-                    <a href="#skills" class="nav-item nav-link text-reset" id="skills-tab" role="tab" aria-controls="skills" aria-selected="false">Aptitudes</a>
-                    <a href="#education" class="nav-item nav-link text-reset" id="education-tab" role="tab" aria-controls="education" aria-selected="false">Educacion</a>
-                    <a href="#contact" class="nav-item nav-link text-reset" id="contact-tab" role="tab" aria-controls="contact" aria-selected="false">Contacto</a>
+                <nav>
+                    <div class="nav d-flex flex-column" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                            role="tab" aria-controls="nav-profile" aria-selected="true">Perfil</a>
+                        <a class="nav-item nav-link" id="nav-skills-tab" data-toggle="tab" href="#nav-skills" role="tab"
+                            aria-controls="nav-skills" aria-selected="false">Aptitudes</a>
+                        <a class="nav-item nav-link" id="nav-education-tab" data-toggle="tab" href="#nav-education"
+                            role="tab" aria-controls="nav-education" aria-selected="false">Educacion</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                            role="tab" aria-controls="nav-contact" aria-selected="false">Contacto</a>
+                    </div>
                 </nav>
-            </div>
+            </aside>
 
-            <main id="tabContent" class="col-sm-8 tab-content d-flex align-items-center">
-                <article class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <main class="tab-content col-sm-8 d-flex align-items-center" id="nav-tabContent">
+
+                <article class="tab-pane fade show active" id="nav-profile" role="tabpanel"
+                    aria-labelledby="nav-profile-tab">
                     <h2>Perfil</h2>
                     <p>Estudiante de Ingeniería de Sistemas e Informática en la Universidad Pontificia Bolivariana,
                         actualmente cursando el séptimo semestre</p>
                 </article>
-                <article class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+                <article class="tab-pane fade" id="nav-skills" role="tabpanel" aria-labelledby="nav-skills-tab">
                     <h2>Aptitudes</h2>
                     <h3>Lenguajes de Programación</h3>
                     <ul>
@@ -53,10 +61,14 @@
                         <li><strong>Escuchar:</strong> Nivel Alto</li>
                     </ul>
                 </article>
-                <article class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+                <article class="tab-pane fade" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab">
                     <h2>Formación</h2>
                     <h3>Básica y Media</h3>
+                    <p>Escuela Normal Superior Pedro justo Berrio <br>
+                        Santa Rosa de Osos <br>
+                        2004-2012</p>
                     <p>Colegio de la Universidad Pontificia Bolivariana <br>
+                        Medellin <br>
                         2013 - 2015</p>
 
                     <h3>Universitaria</h3>
@@ -64,7 +76,7 @@
                         2016 - Actualidad</p>
                     <p></p>
                 </article>
-                <article class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <article class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                     <h2>Contacto</h2>
                     <h3>Email</h3>
                     <p>danielpre30@outlook.com <br>
@@ -72,11 +84,11 @@
                     <h3>Teléfono</h3>
                     <p>3118557304</p>
                     <h3>Twitter</h3>
-                    <p>danielpret30</p>
+                    <a href="https://twitter.com/danielpret30?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-lang="es" data-show-count="false">Follow @danielpret30</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </article>
+
             </main>
         </div>
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -88,6 +100,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+
+
 </body>
 
 </html>

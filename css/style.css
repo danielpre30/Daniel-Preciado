@@ -4,7 +4,17 @@
     background-color: #0FF4C6;
 }
 
-#tabContent{
+#nav-tabContent{
     padding: 15%;
     background-color: #DEFFF2;
+}
+
+aside .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+    color: black;
+  }
+
+  aside img {
+    width: 130px;
 }
