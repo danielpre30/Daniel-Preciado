@@ -1,10 +1,10 @@
 /* https://coolors.co/85bdbf-defff2-57737a-484041-0ff4c6 */
 
-.menu{
+.menu {
     background-color: #0FF4C6;
 }
 
-#nav-tabContent{
+#nav-tabContent {
     padding: 15%;
     background-color: #DEFFF2;
 }
@@ -13,8 +13,24 @@ aside .nav-link {
     padding-left: 0;
     padding-right: 0;
     color: black;
-  }
+}
 
-  aside img {
+aside img {
     width: 130px;
+}
+
+main article form {
+    margin: 1rem 0;
+}
+
+.btn-dark {
+    color: #DEFFF2;
+    background-color: #484041;
+    border-color: #484041;
+}
+
+.btn-dark:hover {
+    color: #484041;
+    background-color: #0FF4C6;
+    border-color: #0FF4C6;
 }
