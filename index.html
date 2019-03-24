@@ -14,30 +14,32 @@
 <body class="h-100">
     <div class="container-fluid h-100">
         <div class="row h-100">
-            <aside class="col-12 col-sm d-sm-flex justify-content-center align-items-center flex-column menu text-dark">
-                <nav class="nav-bar navbar-expand-lg">
-                    <figure class="navbar-brand">
-                        <img src="img/foto_perfil.jpg" alt="Daniel Preciado" class="rounded-circle">
-                        <figcaption class="border-bottom border-dark">
-                            <p class="h2">Hola!</p>
-                            <h1 class="h2 font-weight-bold">Soy Daniel</h1>
-                        </figcaption>
-                    </figure>
+            <aside
+                class="col-12 col-sm d-sm-flex justify-content-center align-items-center flex-column menu text-dark"
+                id="side">
+                <figure>
+                    <img src="img/foto_perfil.jpg" alt="Daniel Preciado" class="rounded-circle d-none d-sm-block">
+                    <figcaption class="border-bottom border-dark">
+                        <p class="h2">Hola!</p>
+                        <h1 class="h2 font-weight-bold">Soy Daniel</h1>
+                    </figcaption>
+                </figure>
+                <nav class="navbar navbar-expand-lg navbar-light">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-tab"
-                        aria-controls="nav-tab" aria-expanded="false" aria-label="Toggle navigation">
+                        aria-controls="side" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse d-flex flex-column" id="nav-tab" role="tablist">
-                        <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
-                            role="tab" aria-controls="nav-profile" aria-selected="true">Perfil</a>
-                        <a class="nav-item nav-link" id="nav-skills-tab" data-toggle="tab" href="#nav-skills" role="tab"
+                    <div class="nav collapse navbar-collapse flex-column" id="nav-tab" role="tablist">
+                        <a class="nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                            aria-controls="nav-profile" aria-selected="true">Perfil</a>
+                        <a class="nav-link" id="nav-skills-tab" data-toggle="tab" href="#nav-skills" role="tab"
                             aria-controls="nav-skills" aria-selected="false">Aptitudes</a>
-                        <a class="nav-item nav-link" id="nav-education-tab" data-toggle="tab" href="#nav-education"
-                            role="tab" aria-controls="nav-education" aria-selected="false">Educacion</a>
-                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
-                            role="tab" aria-controls="nav-contact" aria-selected="false">Contacto</a>
-                        <a class="nav-item nav-link" id="nav-more-tab" data-toggle="tab" href="#nav-more" role="tab"
+                        <a class="nav-link" id="nav-education-tab" data-toggle="tab" href="#nav-education" role="tab"
+                            aria-controls="nav-education" aria-selected="false">Educacion</a>
+                        <a class="nav-link" id="nav-more-tab" data-toggle="tab" href="#nav-more" role="tab"
                             aria-controls="nav-more" aria-selected="false">Galería</a>
+                        <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                            aria-controls="nav-contact" aria-selected="false">Contacto</a>
                     </div>
                 </nav>
             </aside>
@@ -80,22 +82,6 @@
                     <p>Universidad Pontificia Bolivariana <br>
                         2016 - Actualidad</p>
                     <p></p>
-                </article>
-                <article class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <h2>Contacto</h2>
-                    <h3>Email</h3>
-                    <form action="mailto:danielpre30@outlook.com">
-                        <input class="btn btn-dark" id="btn-mail" type="submit" value="danielpre30@outlook.com" />
-                    </form>
-                    <form action="mailto:daniel.preciado@upb.edu.co">
-                        <input class="btn btn-dark" id="btn-mail" type="submit" value="daniel.preciado@upb.edu.co" />
-                    </form>
-                    <h3>Teléfono</h3>
-                    <p>311 855 7304</p>
-                    <h3>Twitter</h3>
-                    <a href="https://twitter.com/danielpret30?ref_src=twsrc%5Etfw" class="twitter-follow-button"
-                        data-size="large" data-lang="es" data-show-count="false">Follow @danielpret30</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </article>
                 <article class="tab-pane fade" id="nav-more" role="tabpanel" aria-labelledby="nav-contact-tab">
                     <h2>Galería</h2>
@@ -195,7 +181,22 @@
                     </div>
 
                 </article>
-
+                <article class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <h2>Contacto</h2>
+                    <h3>Email</h3>
+                    <form action="mailto:danielpre30@outlook.com">
+                        <input class="btn btn-dark" id="btn-mail" type="submit" value="danielpre30@outlook.com" />
+                    </form>
+                    <form action="mailto:daniel.preciado@upb.edu.co">
+                        <input class="btn btn-dark" id="btn-mail" type="submit" value="daniel.preciado@upb.edu.co" />
+                    </form>
+                    <h3>Teléfono</h3>
+                    <p>311 855 7304</p>
+                    <h3>Twitter</h3>
+                    <a href="https://twitter.com/danielpret30?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                        data-size="large" data-lang="es" data-show-count="false">Follow @danielpret30</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </article>
             </main>
         </div>
     </div>
