@@ -14,8 +14,7 @@
 <body class="h-100">
     <div class="container-fluid h-100">
         <div class="row h-100">
-            <aside
-                class="col-12 col-sm d-sm-flex justify-content-center align-items-center flex-column menu text-dark"
+            <aside class="p-5 col-12 col-sm d-sm-flex justify-content-center align-items-center flex-column menu text-dark"
                 id="side">
                 <figure>
                     <img src="img/foto_perfil.jpg" alt="Daniel Preciado" class="rounded-circle d-none d-sm-block">
@@ -38,13 +37,15 @@
                             aria-controls="nav-education" aria-selected="false">Educacion</a>
                         <a class="nav-link" id="nav-more-tab" data-toggle="tab" href="#nav-more" role="tab"
                             aria-controls="nav-more" aria-selected="false">Galería</a>
+                        <a class="nav-link" id="nav-playlist-tab" data-toggle="tab" href="#nav-playlist" role="tab"
+                            aria-controls="nav-playlist" aria-selected="false">Playlist</a>
                         <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
                             aria-controls="nav-contact" aria-selected="false">Contacto</a>
                     </div>
                 </nav>
             </aside>
 
-            <main class="tab-content col-sm-8 d-flex align-items-center" id="nav-tabContent">
+            <main class="tab-content col-md-8 d-flex align-items-center justify-content-center" id="nav-tabContent">
                 <article class="tab-pane fade show active" id="nav-profile" role="tabpanel"
                     aria-labelledby="nav-profile-tab">
                     <h2>Perfil</h2>
@@ -180,6 +181,11 @@
                         </a>
                     </div>
 
+                </article>
+                <article class="tab-pane fade" id="nav-playlist" role="tabpanel" aria-labelledby="nav-playlist-tab">
+                    <h2>Playlist</h2>
+                    <iframe src="https://open.spotify.com/embed/user/danielpre30/playlist/1dPPYTI8R5MGBUNAYS7S64" width="100%" height="500"
+                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </article>
                 <article class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                     <h2>Contacto</h2>
